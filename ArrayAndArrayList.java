@@ -54,15 +54,15 @@ for(int i=0;i<5;i++){
     roll_no[i]= scanner.nextInt();
 }
 for(int i = 0; i<5;i++){
-System.out.println(roll_no[i] + " ");
+//System.out.println(roll_no[i] + " ");
 }
 for( int i : roll_no){ // for every element in array, print the element
-    System.out.println(i);// here num represent elemet of the arrauy
+  //  System.out.println(i);// here num represent elemet of the arrauy
 }
 
 //System.out.println(roll_no[5]);// index out of boumd error
 
-System.out.println(Arrays.toString(roll_no));
+//System.out.println(Arrays.toString(roll_no));
 
 //arrray of objects
 
@@ -72,5 +72,19 @@ for (String string : str) {
     
 }
 
+// modify
+str[0]= "yash";
+//System.out.println(str);
+
+
+
+//  2D array
+
+/*
+  1 2 3 
+  4 5 6
+  7 8 9 
+ */
+int[][] num = new int[3][3];// rows are mandatory and columns are not.
 }
 }
