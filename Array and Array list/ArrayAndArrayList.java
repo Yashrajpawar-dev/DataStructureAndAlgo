@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 
+// All the things can found in java.util.*;
+
 public class ArrayAndArrayList {
     public static void main(String[] args) {
     
