@@ -1,3 +1,11 @@
+package Questions;
+
+
+
+
+
+
+
 public class RichestCustomerWealth {
   //  https://leetcode.com/problems/richest-customer-wealth/description/
     public static void main(String[] args) {
