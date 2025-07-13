@@ -26,15 +26,20 @@ public class FindEvenNumbers {
 
 static boolean even(int num){
     int number = digits(num);
-    if (number % 2 ==0 ) {
-        return true;
+   
+        return number % 2 ==0;
         
-    }
-    return false;
+    
+
 }
 static int digits(int num){
     int count = 0; //  to check the number is even or odd
-    
+if(num<0){
+    num = num + -1;
+}
+if(num==0){
+  return 1;
+}
    while(num>0){
     count++;
     num = num/10;
