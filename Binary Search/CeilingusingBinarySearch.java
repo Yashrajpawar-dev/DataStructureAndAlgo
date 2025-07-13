@@ -1,9 +1,10 @@
+public class CeilingusingBinarySearch {
+    
 
-public class BinarySearch {
     public static void main(String[] args) {
         int[] arr = {2,4,5,11,14,16,20,23,29,30};
 
-        int key = 16;
+        int key = 19;
         System.out.println(search(arr,key));
     }
 
@@ -22,7 +23,9 @@ static int search(int[] arr, int key){
             upper = mid -1;
         }
     }
-    return -1;
+    return lower;
 }
 }
+
+
 
