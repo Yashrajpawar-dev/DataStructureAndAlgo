@@ -1,9 +1,10 @@
 
-public class BinarySearch {
-    public static void main(String[] args) {
-        int[] arr = {2,4,5,11,14,16,20,23,29,30};
 
-        int key = 23;
+public class BinarySearchInDescendingOrder {
+    public static void main(String[] args) {
+        int[] arr = {90,89,76,65,54,49,47,34};
+
+        int key = 89;
         System.out.println(search(arr,key));
     }
 
@@ -16,13 +17,13 @@ static int search(int[] arr, int key){
         if (arr[mid] == key) {
             return mid;
             
-        }else if(key > arr[mid]){
-            lower = mid + 1;
+        }else if(key < arr[mid]){
+             upper = mid -1;
+           
         }else{
-            upper = mid -1;
+            lower = mid + 1;
         }
     }
     return -1;
 }
 }
-
