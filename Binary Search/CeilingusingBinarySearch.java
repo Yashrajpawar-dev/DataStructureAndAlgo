@@ -7,8 +7,13 @@ public class CeilingusingBinarySearch {
         int key = 19;
         System.out.println(search(arr,key));
     }
-
+// Return the index of the smallest no >= traget
 static int search(int[] arr, int key){
+    //what if target is the greatest
+    if(key > arr[arr.length-1]){
+return -1;
+    }
+
     int lower = 0;
     int upper = arr.length-1;
     while(lower<=upper){
